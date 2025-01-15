@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="hero" data-aos="fade-up">
+            <h1>Hello! I’m John Doe, Photographer</h1>
+            <h4>Capturing moments that matter</h4>
+            <button id="portfolio">View Portfolio</button>
+        </div>
+
+        <div id="about" data-aos="fade-right">
+            <h2>About Me</h2>
+            <img src="photographer photo.webp" alt="Photographer Photo">
+            <p>
+                Hello! My name is John Doe, and I'm a passionate photographer with over 5 years of experience capturing life's most beautiful moments.
+                I specialize in portraits, weddings, and lifestyle photography. My goal is to tell your story through timeless, authentic images that you'll cherish forever.
+                Whether it's your big day, a family moment, or just a creative portrait session, I'm here to make every shot count.
+                Let's create something unforgettable together!
+            </p>
+        </div>
+
+        <div id="Services">
+            <h2>📷 Services</h2>
+            <div class="service-item" data-aos="zoom-in">
+                <h3>📸 Portrait Photography</h3>
+                <p>Capture your best moments with professional portrait sessions tailored to your personality. Perfect for personal branding, social media, or family keepsakes.</p>
+            </div>
+            <div class="service-item" data-aos="zoom-in" data-aos-delay="200">
+                <h3>💍 Wedding Photography</h3>
+                <p>Timeless wedding photography to preserve every emotional moment of your special day. Let’s make your big day unforgettable.</p>
+            </div>
+            <div class="service-item" data-aos="zoom-in" data-aos-delay="400">
+                <h3>🖼 Event Photography</h3>
+                <p>From corporate events to private celebrations, I’ll capture all the key moments that matter most.</p>
+            </div>
+            <div class="service-item" data-aos="zoom-in" data-aos-delay="600">
+                <h3>🌄 Landscape & Travel Photography</h3>
+                <p>Artistic landscape shots that bring the beauty of nature into your home or workspace. Prints available on request.</p>
+            </div>
+        </div>
+
+        <div id="contact" data-aos="fade-up">
+            <h2>Contact</h2>
+            <form action="contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required><br>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message"></textarea><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
